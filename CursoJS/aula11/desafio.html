@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificador de Nacionalidade</h1>
+    Digite o nome do pais que você nasceu: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id='resp'></div>
+
+    <script>
+         
+        function verificar(){
+            var nomePais = window.document.getElementById('pais')
+            var res = window.document.getElementById('resp')
+            if (nomePais.value == 'Brasil'){
+                res.innerText = "Você é brasileiro"
+            } else{
+                res.innerText = "Você é estrangeiro"
+            }
+        }
+    </script>
+</body>
+</html>

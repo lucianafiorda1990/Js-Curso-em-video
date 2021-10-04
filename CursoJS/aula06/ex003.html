@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(92, 204, 176);
+            color:rgb(18, 3, 32);
+            font: normal 25pt Arial;
+        }
+        h1{
+            color:coral;
+        }
+ 
+    </style>
+</head>
+<body>
+  <h1> Olá, mundo! </h1>
+  <p>Já me livrei da maldição</p>
+  <script>
+      // tres maneiras de converter de String para numero
+      var n1 = Number.parseInt(window.prompt('Digite um numero'))
+      var n2 = Number.parseFloat(window.prompt('Digite outro numero'))
+      var n3 = Number(window.prompt('Digite o ultimo numero'))
+      var soma = n1+n2+n3
+      window.alert(`A soma entre ${n1}, ${n2} e ${n3} é = ${soma}`)
+
+      // para converter para string:
+      // String(n)
+      //n.toString()
+  </script>
+</body>
+</html>

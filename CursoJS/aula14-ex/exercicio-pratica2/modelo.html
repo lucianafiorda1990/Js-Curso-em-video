@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estações</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body id="corpo"> 
+    <header>
+        <h1>Estações</h1>
+    </header> 
+    <section>
+        <div id="box_estacoes" class="box_branco">
+            <h5 id='titulo'>Qual a sua estação favorita? </h5>
+            <div>
+                <input type="radio" name="radest" id="primavera" checked>
+                <label for="primavera">Primavera</label>
+                <input type="radio" name="radest" id="verao">
+                <label for="verao">Verão</label>
+                <input type="radio" name="radest" id="outono">
+                <label for="outono">Outono</label>
+                <input type="radio" name="radest" id="inverno">
+                <label for="inverno">Inverno</label>
+            </div>
+            <input type="button" value="Escolher" id="botao" onclick="estacoes()">
+        </div>
+    </section>
+    <footer id="rodape">
+        <p>&copy; Curso em Vídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
